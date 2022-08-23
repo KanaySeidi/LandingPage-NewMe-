@@ -1,10 +1,11 @@
 import React from "react";
-import rectangle from "../images/Rectangle 1.svg";
-import dollary1 from "../images/dollary1.svg";
-import dollary2 from "../images/dollary2.svg";
-import phoneHand from "../images/phoneHand1.png";
-import instagram from "../images/instagram1.svg";
-import message from "../images/massage.svg";
+import rectangle from "../images/header/header-hero.png";
+import dollary1 from "../images/header/dollary1.svg";
+import dollary2 from "../images/header/dollary2.svg";
+import phoneHand from "../images/header/phoneHand1.png";
+import instagram from "../images/header/instagram1.svg";
+import message from "../images/header/massage.svg";
+import phonePic from "../images/header/image 34.svg";
 
 const Header = () => {
   return (
@@ -41,6 +42,7 @@ const Header = () => {
       <div className="header__video">
         <div>
           <img src={phoneHand} alt="hands img" className="phoneHand" />
+          <img src={phonePic} alt="instagram" className="phonePic" />
         </div>
         <div className="header__video-container">
           <div className="header__video-text">
@@ -53,7 +55,9 @@ const Header = () => {
           <div>
             <img src={message} alt="message img" className="message" />
           </div>
-          <div>video</div>
+          <div className="header__video-video">
+            <video src=""></video>
+          </div>
         </div>
       </div>
     </div>
