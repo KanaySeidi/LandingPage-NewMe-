@@ -11,9 +11,12 @@ const Header = () => {
   return (
     <div className="header__container">
       <div className="header">
-        <div>Программа курса</div>
         <div>logo</div>
-        <div>+996 (553) 300 555</div>
+        <div>Кому подойдет курс?</div>
+        <div>Программа курса</div>
+        <div>Тарифы</div>
+        <div>Отзывы участниц</div>
+        <div>FAQ</div>
       </div>
 
       <div className="header__text">

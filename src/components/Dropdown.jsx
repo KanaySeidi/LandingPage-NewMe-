@@ -43,34 +43,39 @@ const Dropdown = ({ selected, setSelected }) => {
     <div>
       <div className="dropdown-body">
         <div className="dropdown">
-          <div className="dropdown-btn" onClick={(e) => setIsActive(!isActive)}>
-            <span className="module1">Модуль-1</span>{" "}
-            <span className="module-theme1">
-              Проработка страхов и постановка целей на запуск бизнеса
-            </span>
-          </div>
-          {isActive && (
-            <div className="dropdown-content">
-              {options.map((option) => (
-                <div
-                  onClick={(e) => {
-                    setSelected(option);
-                    setIsActive(false);
-                  }}
-                  className="dropdown-item"
-                >
-                  {option}
-                </div>
-              ))}
-              <div>
-                <img src={time} alt="" className="time-icon" />
-                <span className="time-txt">7 уроков</span>
-              </div>
-              <div>
-                <img src={result1} alt="" className="result1" />
-              </div>
+          <div className="dropdown-container">
+            <div
+              className="dropdown-btn"
+              onClick={(e) => setIsActive(!isActive)}
+            >
+              <span className="module1">Модуль-1</span>{" "}
+              <span className="module-theme1">
+                Проработка страхов и постановка целей на запуск бизнеса
+              </span>
             </div>
-          )}
+            {isActive && (
+              <div className="dropdown-content">
+                {options.map((option) => (
+                  <div
+                    onClick={(e) => {
+                      setSelected(option);
+                      setIsActive(false);
+                    }}
+                    className="dropdown-item"
+                  >
+                    {option}
+                  </div>
+                ))}
+                <div>
+                  <img src={time} alt="" className="time-icon" />
+                  <span className="time-txt">7 уроков</span>
+                </div>
+                <div>
+                  <img src={result1} alt="" className="result1" />
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </div>

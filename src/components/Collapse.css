@@ -1,0 +1,29 @@
+.hide{
+    display: none;
+}
+
+.question{
+    border-bottom: 2px solid rgba(136, 255, 240, 1);
+    padding: 2em 0;
+}
+
+.question:last-child{
+    border-bottom: none
+}
+
+.question-txt{
+    cursor: pointer;
+    margin-bottom: .5em;
+    width: 80%;
+    font-size: 25px !important;
+}
+
+.question-wrapper{
+    position: relative;
+}
+
+svg{
+    position: absolute;
+    top: .5em;
+    right: 0;
+}

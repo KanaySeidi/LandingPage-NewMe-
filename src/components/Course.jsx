@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Ellipse from "../images/course/Ellipse1.svg";
 import frame6 from "../images/course/Frame6.svg";
 import frame5 from "../images/course/Rectangle21.svg";

@@ -16,8 +16,8 @@
 }
 
 .header{
-  display: grid;
-  grid-template-columns: 25% 50% 25%;
+  display: flex;
+  justify-content: space-evenly;
   justify-items: center;
   padding: 15px 0 0 15px;
   font-style: normal;
@@ -162,7 +162,6 @@ height: 1944px;
 }
 .transition{
 position: absolute;
-width: 2507px;
 height: 253px;
 top: 1130px;
 }
@@ -220,7 +219,7 @@ border-radius: 15px;
 }
 
 .dropdown-content{
-  display: flex;
+display: flex;
 flex-direction: column;
 align-items: flex-start;
 padding: 14px 41px;
@@ -872,4 +871,15 @@ span.main-left__block-prodaj {
   position: absolute;
   left: -10px;
   top: 30px;
+}
+
+
+/* phone  */
+@media only screen and (max-width: 767px) {
+  body{
+    color: #1D4CF5 !important;
+  }
+  .module1{
+    font-size: 16px;
+  }
 }
