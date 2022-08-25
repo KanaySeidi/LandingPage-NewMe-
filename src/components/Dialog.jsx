@@ -1,5 +1,9 @@
 import React, { useState } from "react";
+import axios from "axios";
 import "./Dialog.css";
+
+const API = "https://sheetdb.io/api/v1/tbbo6gv00zhng";
+
 const Dialog = ({ modalActive, setModalActive }) => {
   const [newUser, setNewUser] = useState({
     name: "",
@@ -7,11 +11,22 @@ const Dialog = ({ modalActive, setModalActive }) => {
     email: "",
   });
 
-  //   setNewUser({
-  //     name: "",
-  //     tel: "",
-  //     email: "",
-  //   });
+  async function onSubmit(e) {
+    e.preventDefault();
+    try {
+      await axios.post(API, {
+        data: { name: newUser.name, tel: newUser.tel, email: newUser.email },
+      });
+      console.log("Ushpeshno");
+      setNewUser({
+        email: "",
+        name: "",
+        tel: "",
+      });
+    } catch (error) {
+      console.log("Ne Ushpeshno");
+    }
+  }
 
   return (
     <div
@@ -31,7 +46,7 @@ const Dialog = ({ modalActive, setModalActive }) => {
           <span>Запись на курс</span>
           <span>Оставьте заявку и мы с Вами свяжемся!</span>
         </div>
-        <form>
+        <form onSubmit={(e) => onSubmit(e)}>
           <input
             type="text"
             name=""
@@ -58,9 +73,9 @@ const Dialog = ({ modalActive, setModalActive }) => {
           />
           <button
             className="submit-btn"
+            type="submit"
             onClick={(e) => {
               setModalActive(false);
-              e.preventDefault();
             }}
           >
             Отправить

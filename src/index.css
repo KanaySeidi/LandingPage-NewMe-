@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat';
-
 }
 
 /* ! Header Start */
@@ -162,7 +161,7 @@ background-color:rgba(39, 64, 75, 1);
 .course-container{
   background-color: rgba(172, 217, 215, 1);
   width: 1512px;
-height: 1944px;
+padding: 5em;
 }
 .transition{
 position: absolute;
@@ -185,9 +184,16 @@ width: 1536.52px;
 height: 204.61px;
 left: -22.66px;
 top: 1340px;
-
-  
 }
+
+.modules-container{
+  padding: 500px 8em 0 8em;
+}
+
+
+
+
+
 /* !Dropdown */
 .dropdown-body{
   background: #fcfcfc;
@@ -311,7 +317,7 @@ top: 685px;
   margin-top: 200px;
   background-color: #5d99ac;
   width: 100%;
-  height: 1622px;
+  height: 1850px;
   display: block;
   padding-top: 170px;
 }
@@ -323,21 +329,23 @@ top: 685px;
 .wraper {
   display: flex;
   justify-content: space-evenly;
-  width: 1200px;
+  width: 1300px;
   margin: 77px auto;
 }
 .wraper .left-block {
   display: block;
   width: 480px;
-  height: 1142px;
+  height: 1342px;
   background-color: white;
   margin-left: 0px;
+  border-radius: 10px;
 }
 .wraper .text-standart {
   padding-top: 20px;
   background-color: #d2efff;
   width: 480px;
-  height: 50px;
+  height: 70px;
+  border-radius: 10px;
 }
 .wraper .text-standart h2 {
   font-size: 28px;
@@ -351,6 +359,8 @@ top: 685px;
   width: 346px;
   height: 46px;
   margin-top: 30px;
+  margin-bottom: 50px;
+  
 }
 .left-block .line {
   width: 410px;
@@ -392,7 +402,7 @@ button.zayavka {
   height: 72px;
   font-size: 24px;
   color: #fff;
-  background: linear-gradient(180deg, #849fff 0%, #1d4cf5 100%);
+  background-image: linear-gradient(180deg, #849fff 0%, #1d4cf5 100%);
   box-shadow: 0px 75px 30px rgba(0, 0, 0, 0.01),
     0px 42px 25px rgba(0, 0, 0, 0.05), 0px 19px 19px rgba(0, 0, 0, 0.09),
     0px 5px 10px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
@@ -401,10 +411,13 @@ button.zayavka {
   margin-left: 75px;
 }
 .wraper .right-block {
-  height: 1295px;
+  height: 1500px;
+  border-radius: 10px;
 }
 .right-block .text-nastav {
   background-color: #51a5f3;
+  height: 80px;
+  border-radius: 10px;
 }
 .right-block .text-nastav h2 {
   color: #fff;
@@ -416,11 +429,13 @@ button.zayavka {
   margin-top: 30px;
   margin-left: 27px;
 }
-.wraper .right-block ul .li {
+.li_last {
   width: 346px;
   height: 46px;
   margin-top: -10px;
   font-size: 18px;
+  line-height: 10px;
+  line-height: 10px !important;
 
 }
 .wraper .right-block .ul {
@@ -436,9 +451,6 @@ button.zayavka {
 * {
   padding: 0;
   margin: 0;
-}
-.App {
-  margin-top: 59px;
 }
 .container {
   width: 90%;

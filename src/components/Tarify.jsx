@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const Tarify = () => {
   return (
     <div className="back">
@@ -76,10 +77,10 @@ const Tarify = () => {
             <li>Живой и онлайн выпускной по окончанию</li>
           </ul>
           <div className="lines">
-            <ul className="ul">
-              <li className="li">4 индивидуальные встречи со мной</li>
-              <li className="li">личная поддержка от меня </li>
-              <li className="li">реклама в моем блоге</li>
+            <ul className="ul_last">
+              <li className="li_last">4 индивидуальные встречи со мной</li>
+              <li className="li_last">личная поддержка от меня </li>
+              <li className="li_last">реклама в моем блоге</li>
             </ul>
           </div>
           <div className="stoimost">
@@ -95,7 +96,18 @@ const Tarify = () => {
             </h2>
             <h3>Осталось 1 мест</h3>
           </div>
-          <button className="zayavka">Оставить заявку</button>
+          {/* <Link
+            to={{ pathname: "https://wa.me/message/DE7P5KAUMIB6I1" }}
+            target={"_blank"}
+            rel="noopener noreferrer"
+          > */}
+          <button
+            onClick={() => window.open("https://wa.me/message/DE7P5KAUMIB6I1")}
+            className="zayavka"
+          >
+            Оставить заявку
+          </button>
+          {/* </Link> */}
         </div>
       </div>
     </div>
