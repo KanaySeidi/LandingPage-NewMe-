@@ -1,0 +1,32 @@
+
+.module-container{
+    width: 1165px;
+    margin: auto;
+    line-height: 50px;
+    background-color: rgba(172, 217, 215, 1);
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    top: 25em;
+}
+
+.module{
+    background: #FFFFFF;
+    box-shadow: -8px 0px 0px #B1ABE0, 128px 120px 70px rgba(0, 0, 0, 0.01), 72px 68px 59px rgba(0, 0, 0, 0.05), 32px 30px 44px rgba(0, 0, 0, 0.09), 8px 8px 24px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    
+
+}
+
+.module-time{
+    position: absolute;
+    top: 600px;
+    left: 100px;
+}
+
+
+.answer-txt li{
+    font-size: 18px;
+    color: black;
+
+   }

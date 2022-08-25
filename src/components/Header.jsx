@@ -7,7 +7,7 @@ import instagram from "../images/header/instagram1.svg";
 import message from "../images/header/massage.svg";
 import phonePic from "../images/header/image 34.svg";
 
-const Header = () => {
+const Header = ({ modalActive, setModalActive }) => {
   return (
     <div className="header__container">
       <div className="header">
@@ -29,7 +29,13 @@ const Header = () => {
           <span className="stonks__number">150.000</span> за 1 месяц на <br />
           на курсе <span className="newMe">"НОВАЯ Я"</span>
         </div>
-        <button className="header__left-btn">Принять участие</button>
+        <button
+          type="button"
+          className="header__left-btn"
+          onClick={() => setModalActive(true)}
+        >
+          Принять участие
+        </button>
       </div>
       <div className="header__right-img">
         <div>
@@ -59,7 +65,15 @@ const Header = () => {
             <img src={message} alt="message img" className="message" />
           </div>
           <div className="header__video-video">
-            <video src=""></video>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/eebPglrKnTs"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
       </div>
