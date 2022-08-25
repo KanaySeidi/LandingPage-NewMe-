@@ -37,11 +37,7 @@ const Dialog = ({ modalActive, setModalActive }) => {
         }
       }}
     >
-      <div
-        className="auth-container"
-        id="content"
-        // onBlur={setModalActive(false)}
-      >
+      <div className="auth-container" id="content">
         <div className="auth-txt">
           <span>Запись на курс</span>
           <span>Оставьте заявку и мы с Вами свяжемся!</span>

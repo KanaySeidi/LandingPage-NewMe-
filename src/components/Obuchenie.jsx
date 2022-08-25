@@ -20,7 +20,6 @@ const Obuchenie = () => {
       <div className="wrapper-2">
         <div className="container">
           <div className="frame-img">
-            {/* <img src="img/frame.png" alt="ghjkkl" /> */}
             <img src={frame} alt="ghjhk" />
           </div>
           <div className="rec-df">

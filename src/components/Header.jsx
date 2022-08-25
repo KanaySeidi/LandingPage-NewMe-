@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import rectangle from "../images/header/header-hero.png";
 import dollary1 from "../images/header/dollary1.svg";
 import dollary2 from "../images/header/dollary2.svg";
@@ -6,17 +7,21 @@ import phoneHand from "../images/header/phoneHand1.png";
 import instagram from "../images/header/instagram1.svg";
 import message from "../images/header/massage.svg";
 import phonePic from "../images/header/image 34.svg";
+import Video from "./Video";
+import Faq from "./Faq";
 
 const Header = ({ modalActive, setModalActive }) => {
   return (
     <div className="header__container">
       <div className="header">
-        <div>logo</div>
-        <div>Кому подойдет курс?</div>
-        <div>Программа курса</div>
-        <div>Тарифы</div>
-        <div>Отзывы участниц</div>
-        <div>FAQ</div>
+        <div className="newMe">"НОВАЯ Я"</div>
+        <Link to="/" component={Faq}>
+          <button>Кому подойдет курс?</button>
+        </Link>
+        <button>Программа курса</button>
+        <button>Тарифы</button>
+        <button>Отзывы участниц</button>
+        <button>FAQ</button>
       </div>
 
       <div className="header__text">
