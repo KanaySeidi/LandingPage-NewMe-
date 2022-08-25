@@ -44,7 +44,16 @@ const Obuchenie = () => {
           <div className="df">
             <div className="left-block">
               <img src={amalia} alt="" />
-              <button className="amalia-btn">@amalia_dress_bishkek</button>
+              <button
+                onClick={() =>
+                  window.open(
+                    "https://instagram.com/amalia_dress_bishkek?igshid=YmMyMTA2M2Y="
+                  )
+                }
+                className="amalia-btn"
+              >
+                @amalia_dress_bishkek
+              </button>
             </div>
             <div className="right-block">
               <div className="text_do">
@@ -116,7 +125,16 @@ const Obuchenie = () => {
 
             <div className="main-right__block">
               <img src={narin} alt="" />
-              <button className="narin-btn">@narin.modest</button>
+              <button
+                onClick={() =>
+                  window.open(
+                    "https://instagram.com/narin.modest?igshid=YmMyMTA2M2Y="
+                  )
+                }
+                className="narin-btn"
+              >
+                @narin.modest
+              </button>
             </div>
           </div>
         </div>
@@ -137,7 +155,16 @@ const Obuchenie = () => {
           <div className="janyl-left-block">
             <img src={bubble} alt="" />
             {/* <img className="left-img2" src={frame3} alt="" /> */}
-            <button className="bubble-btn">@bubble.kg</button>
+            <button
+              onClick={() =>
+                window.open(
+                  "https://instagram.com/bubble_kg?igshid=YmMyMTA2M2Y="
+                )
+              }
+              className="bubble-btn"
+            >
+              @bubble.kg
+            </button>
             <div className="right-rec">
               <img src={right} alt="" />
             </div>
