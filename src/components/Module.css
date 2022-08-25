@@ -1,0 +1,94 @@
+.module{
+    background-color: aliceblue;
+    border-radius: 1em;
+    border-left: 5px solid violet;
+    padding: 3em;
+    margin-bottom: 2em;
+}
+
+.module:last-child{
+    margin-bottom: 0;
+}
+.module-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+h1{
+    color: rgba(0, 205, 195, 1);
+    font-size: 30px;
+}
+h1 span{
+    color: rgba(31, 113, 210, 1);
+    font-size: 24px;
+}
+
+.module-svg{
+}
+
+.list-content{
+    padding: 2em 1em;
+    list-style: none;
+}  
+.list-content li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: rgba(0, 205, 195, 1); /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em;
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.list-content li{
+    font-size: 24px;
+    margin-bottom: 1em;
+}
+.list-content li:last-child{
+    margin-bottom: 0;
+}
+.module-content div{
+font-size: 24px;
+font-weight: 500;
+line-height: 32px;
+letter-spacing: 0em;
+text-align: left;
+}
+.module-content p{
+    display: flex;
+align-items: flex-start;
+}
+.module-content svg{
+    margin: 0 .5em;
+}
+
+.result-section{
+    margin:2em 0;
+    border: 3px solid rgba(15, 224, 214, 1);
+    padding: 1em;
+    border-radius: .3em;
+}
+
+.result-top{
+    display: flex;
+    align-items: center;
+}
+
+.result-top svg{
+    margin-right: 2em;
+}
+
+.result-bottom{
+    margin-top: 2em;
+}
+
+.footer-text{
+font-size: 24px;
+font-weight: 500;
+line-height: 32px;
+letter-spacing: 0em;
+text-align: left;
+color: rgba(16, 30, 47, 1);
+margin-top: 1em;
+}

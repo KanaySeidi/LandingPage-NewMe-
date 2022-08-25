@@ -1,6 +1,8 @@
 import React from "react";
 import "./Auth.css";
 
+const API = "https://sheetdb.io/api/v1/bjf0hrzuupte6";
+
 const Auth = () => {
   return (
     <>

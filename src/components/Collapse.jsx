@@ -12,6 +12,7 @@ const Collapse = ({ faq }) => {
 
           {active ? (
             <svg
+              className="collapse-svg"
               width="29"
               height="16"
               viewBox="0 0 29 16"
@@ -27,6 +28,7 @@ const Collapse = ({ faq }) => {
             </svg>
           ) : (
             <svg
+              className="collapse-svg"
               width="29"
               height="17"
               viewBox="0 0 29 17"
