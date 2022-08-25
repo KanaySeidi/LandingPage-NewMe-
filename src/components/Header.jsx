@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import rectangle from "../images/header/header-hero.png";
 import dollary1 from "../images/header/dollary1.svg";
 import dollary2 from "../images/header/dollary2.svg";
@@ -7,21 +6,17 @@ import phoneHand from "../images/header/phoneHand1.png";
 import instagram from "../images/header/instagram1.svg";
 import message from "../images/header/massage.svg";
 import phonePic from "../images/header/image 34.svg";
-import Video from "./Video";
-import Faq from "./Faq";
 
-const Header = ({ modalActive, setModalActive }) => {
+const Header = () => {
   return (
     <div className="header__container">
       <div className="header">
-        <div className="newMe">"НОВАЯ Я"</div>
-        <Link to="/" component={Faq}>
-          <button>Кому подойдет курс?</button>
-        </Link>
-        <button>Программа курса</button>
-        <button>Тарифы</button>
-        <button>Отзывы участниц</button>
-        <button>FAQ</button>
+        <div>logo</div>
+        <div>Кому подойдет курс?</div>
+        <div>Программа курса</div>
+        <div>Тарифы</div>
+        <div>Отзывы участниц</div>
+        <div>FAQ</div>
       </div>
 
       <div className="header__text">
@@ -34,13 +29,7 @@ const Header = ({ modalActive, setModalActive }) => {
           <span className="stonks__number">150.000</span> за 1 месяц на <br />
           на курсе <span className="newMe">"НОВАЯ Я"</span>
         </div>
-        <button
-          type="button"
-          className="header__left-btn"
-          onClick={() => setModalActive(true)}
-        >
-          Принять участие
-        </button>
+        <button className="header__left-btn">Принять участие</button>
       </div>
       <div className="header__right-img">
         <div>
@@ -70,15 +59,7 @@ const Header = ({ modalActive, setModalActive }) => {
             <img src={message} alt="message img" className="message" />
           </div>
           <div className="header__video-video">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/eebPglrKnTs"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+            <video src=""></video>
           </div>
         </div>
       </div>
