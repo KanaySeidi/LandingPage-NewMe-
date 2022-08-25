@@ -84,7 +84,7 @@ const Tarify = () => {
           </div>
           <div className="stoimost">
             <h2 className="stoimost-text">
-              Стоимость <span>- 85.000</span>
+              Стоимость <span>- 100.000</span>
             </h2>
             <div className="line2"></div>
           </div>

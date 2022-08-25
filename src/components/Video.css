@@ -1,0 +1,23 @@
+.video-section{
+    width: 1512px;
+    height: 653px;
+    display: flex;
+}
+
+.video-container{
+    margin: 0 auto;
+}
+
+.video-content h2{
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 48px;
+display: flex;
+justify-content: center;
+padding-top: 1em;
+padding-bottom: 1em;
+
+
+color: #255997;
+}

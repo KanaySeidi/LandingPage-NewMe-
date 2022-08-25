@@ -51,6 +51,7 @@ const faqs = [
   },
   {
     id: 6,
+
     question:
       "Я никогда не занималась бизнесом и вообще ничего не понимаю, у меня получится?",
     answer: `Да у тебя точно получится, до старта курса я специально запустила
@@ -63,7 +64,6 @@ const faqs = [
 const Faq = () => {
   return (
     <div>
-      <h2>FAQ</h2>
       <div className="FAQ-section">
         <div className="FAQ-container">
           <img src={question} alt="" className="FAQ-icon" />
