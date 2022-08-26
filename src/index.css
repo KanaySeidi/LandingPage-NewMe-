@@ -721,6 +721,11 @@ span.main-left__block-prodaj {
   top: 30px;
 }
 
+.bluebg{
+  line-height: 24px !important;
+  margin: .5em  !important;
+}
+
 
 /* phone  */
 @media only screen and (max-width: 767px) {
