@@ -915,6 +915,7 @@ h1 span{
   }
   /* ! faq */
   .back {
+    width: 425px;
     margin-top: 81px;
     padding-top: 50px;
     height: 3172px;

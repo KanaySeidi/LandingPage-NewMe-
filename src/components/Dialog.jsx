@@ -59,14 +59,7 @@ const Dialog = ({ modalActive, setModalActive }) => {
             value={newUser.tel}
             onChange={(e) => setNewUser({ ...newUser, tel: e.target.value })}
           />
-          <input
-            type="email"
-            name=""
-            id=""
-            placeholder="email"
-            value={newUser.email}
-            onChange={(e) => setNewUser({ ...newUser, email: e.target.value })}
-          />
+
           <button
             className="submit-btn"
             type="submit"
