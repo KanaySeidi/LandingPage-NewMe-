@@ -45,7 +45,13 @@
   color: rgba(34, 167, 102, 1)
 }
 .newMe{
-  color: rgba(34, 167, 102, 1)
+  color: rgba(34, 167, 102, 1);
+}
+
+.logo{
+  color: rgba(34, 167, 102, 1);
+  font-size: 60px;
+  padding: 0 145px;
 
 }
 .header__left-btn{
@@ -92,7 +98,6 @@ width: 244px;
 height: 365px;
 left: 713px;
 top: 538px;
-/* filter: blur(1px); */
 }
 
 .phoneHand{
@@ -161,7 +166,7 @@ background-color:rgba(39, 64, 75, 1);
 .course-container{
   background-color: rgba(172, 217, 215, 1);
   width: 1512px;
-padding: 5em;
+padding: 5em .5em;
 }
 .transition{
 position: absolute;
@@ -187,7 +192,7 @@ top: 1340px;
 }
 
 .modules-container{
-  padding: 500px 8em 0 8em;
+  padding: 500px 0;
 }
 
 
@@ -728,7 +733,7 @@ span.main-left__block-prodaj {
 
 
 /* phone  */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   *{
     margin: 0;
     padding: 0;
@@ -739,19 +744,20 @@ span.main-left__block-prodaj {
   .header-container{
     background-image: linear-gradient(90deg, #DFE9F3 0%, #FFFFFF 100%);
   }
-  
-  
 
+  .logo{
+    font-size: 28px !important;
+    padding: 12px 35px !important;
+  }
+  
   .header{
     display: none;
   }
   .header__left-text{
-  /* position: absolute; */
   width: 362px;
   height: 276px;
-  margin-top: 50px;
   left: 33px;
-  top: 101px;
+  top: 51px;
   font-family: 'Montserrat';  
   font-style: normal;
   font-weight: 700;
@@ -764,7 +770,7 @@ span.main-left__block-prodaj {
     height: 72px;
     position: absolute;
     left: 48px;
-    top: 1108px;
+    top: 828px;
     background-image: linear-gradient(180deg, #849FFF 0%, #1D4CF5 100%);
     box-shadow: 0px 75px 30px rgba(0, 0, 0, 0.01), 0px 42px 25px rgba(0, 0, 0, 0.05), 0px 19px 19px rgba(0, 0, 0, 0.09), 0px 5px 10px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
     border: none;
@@ -781,7 +787,129 @@ span.main-left__block-prodaj {
     width: 280px;
     height: 379px;
     left: 40px;
-    top: 550px;
+    top: 450px;
   z-index: 1;
   }
+
+  .dollary1{
+    position: absolute;
+    width: 181px;
+    height: 271px;
+    left: 240px;
+    top: 479px;
+    z-index: 2;
+    }
+
+    .dollary2{
+    position: absolute;
+    width: 181px;
+    height: 270px;
+    left: 5px;
+    top: 478px;
+    }
+    .phoneHand{
+      position: absolute;
+      width: 261px;
+      height: 334px;
+      left: 69px;
+      top: 940px;
+    z-index: 4;
+    }
+    .phonePic{
+      position: absolute;
+      width: 124px;
+      height: 223px;
+      left: 179px;
+      top: 954px;
+      z-index: 3;
+    }
+
+    .header__video-container{
+      position: absolute;
+      width: 388px;
+      height: 376px;
+      left: 20px;
+      top: 1275px;
+      border: none solid;
+      background-image: linear-gradient(90deg, #F3E7E9 0%, #E3EEFF 99%, #E3EEFF 100%);
+      box-shadow: 151px 62px 65px rgba(0, 0, 0, 0.01), 85px 35px 55px rgba(0, 0, 0, 0.05), 38px 16px 41px rgba(0, 0, 0, 0.09), 9px 4px 22px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      z-index: 1;
+      }
+.message{
+  display: none;
+}
+
+.header__video-text{
+position: absolute;
+width: 340px;
+height: 65px;
+left: 23px;
+top: 28px;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 29px;
+text-align: center;
+color: #000000;
+}
+.header__video-video{
+  position: absolute;
+  width: 306px;
+  height: 169px;
+  left: 39px;
+  top: 149px;
+  background-color:rgba(39, 64, 75, 1);
+  }
+  .header__video-video iframe{
+    width: 306px;
+    height: 169px;
+    }
+
+
+  .course__text-start{
+    display: none;
+  }
+
+
+  /* ! module */
+  .course-container{
+    background-color: rgba(172, 217, 215, 1);
+    width: 428px;
+    /* padding: 5em; */
+  } 
+  .module{
+    background-color: aliceblue;
+    border-radius: 1em;
+    border-left: 5px solid violet;
+    width: 399px;
+    /* padding: 1em;
+    margin-bottom: .5em; */
+}
+
+h1{
+  color: rgba(0, 205, 195, 1);
+  font-size: 16px;
+}
+h1 span{
+  color: rgba(31, 113, 210, 1);
+  font-size: 14px;
+}
+.module-content div{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  }
+  .module-content p{
+      display: flex;
+  align-items: flex-start;
+  }
+  .module-content svg{
+      margin: 0 .5em;
+  }
+  /* ! faq */
+
+
 }

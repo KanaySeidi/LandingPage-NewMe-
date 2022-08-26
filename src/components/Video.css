@@ -21,3 +21,30 @@ padding-bottom: 1em;
 
 color: #255997;
 }
+
+
+@media screen and (max-width: 767px) {
+    .video-section{
+        width: 428px;
+        height: 553px;
+        display: flex;
+    }
+    .video-container{
+        margin: 0 auto;
+    }
+    .video-content h2{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 25px;
+        display: flex;
+        justify-content: center;
+        padding-top: 4em;
+        padding-bottom: 4em;
+        color: #255997;
+        }
+    .video-content iframe{
+        width: 359px;
+        height: 199px;
+    } 
+}
