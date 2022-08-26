@@ -84,9 +84,7 @@ const Course = () => {
   return (
     <div>
       <div className="course-container">
-        <div className="transition">
-          {/* <img src={Ellipse} alt="ellipse" /> */}
-        </div>
+        <div className="transition"></div>
         <div className="course__text-start">
           <img src={frame6} alt="" className="course__text-item1" />
           <img src={frame5} alt="" className="course__text-item2" />

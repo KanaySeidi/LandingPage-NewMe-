@@ -47,3 +47,41 @@ color: white;
     width: 800px;
     margin: 60px auto 0 auto;
 }
+
+@media screen and (max-width: 767px) {
+    .FAQ-section{
+        width: 428px;
+        height: 1156px;
+        background-color: #ECF2F8;
+        display: flex;
+    }
+    
+    .FAQ-container{
+      width: 411px;
+      height: 1404px;
+      background-color: #538797;
+      border-radius: 15px;
+      position: relative;
+      display: flex;
+      padding-left: .5em;
+    }
+    .FAQ-icon{
+        display: none;
+    }
+    .FAQ-container h3{
+        font-size: 32px;
+        line-height: 41px;
+        color: rgba(255, 255, 255, 1); 
+        padding-left: 1em;
+    }
+    .question-txt{
+        font-size: 14px;
+        margin-top: 20px;
+        color: white;
+        }
+        
+        .answer-txt{
+         font-size: 14px;
+         color: white;
+        }
+}

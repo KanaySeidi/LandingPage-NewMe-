@@ -10,10 +10,10 @@ import phonePic from "../images/header/image 34.svg";
 const Header = ({ setModalActive }) => {
   return (
     <div className="header__container">
+      <div>
+        <span className="logo">НОВАЯ Я</span>
+      </div>
       <div className="header">
-        <div>
-          <span className="newMe">"НОВАЯ Я"</span>
-        </div>
         <div>Кому подойдет курс?</div>
         <div>Программа курса</div>
         <div>Тарифы</div>
