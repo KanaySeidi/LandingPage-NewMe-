@@ -11,6 +11,7 @@ import bubble from "../images/img/bubble.png";
 import frame5 from "../images/img/frame5.png";
 import right from "../images/img/right.png";
 import left from "../images/img/left.png";
+import "./Obuchenie.css";
 const Obuchenie = () => {
   return (
     <div>
