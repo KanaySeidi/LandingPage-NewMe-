@@ -94,9 +94,13 @@
         height: 100vh;
         position: fixed;
         top: 0;
-        /* display: none; */
+        display: none;
         z-index: 999;
         overflow: hidden;
+    }
+
+    .active{
+        display: block;
     }
     
     .auth-container{
