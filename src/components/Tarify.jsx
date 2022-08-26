@@ -1,5 +1,5 @@
 import React from "react";
-import "./Tarify.css";
+// import "./Tarify.css";
 const Tarify = () => {
   return (
     <div className="back">
